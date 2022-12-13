@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="author" content="Yan Guilherme de Souza Moreira">
+  <meta charset="UTF-8">
+  <!--Link CSS-->
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculadora PWD</title>
+</head>
+
+<body>
+  <main>
+    <div class="calculadora">
+      <input type="text" name="tela" id="display-da-tela">
+      <div class="button-conteiner">
+
+        <button class="button" onclick="adicionar_parametro('(')">(</button>
+        <button class="button" onclick="adicionar_parametro(')')">)</button>
+        <button class="button" onclick="pocentagem()">%</button>
+        <button class="button" onclick="delet()">AC</button>
+
+        <button class="button" onclick="adicionar_parametro(7)">7</button>
+        <button class="button" onclick="adicionar_parametro(8)">8</button>
+        <button class="button" onclick="adicionar_parametro(9)">9</button>
+        <button class="button" onclick="adicionar_parametro('/')">/</button>
+
+        <button class="button" onclick="adicionar_parametro(4)">4</button>
+        <button class="button" onclick="adicionar_parametro(5)">5</button>
+        <button class="button" onclick="adicionar_parametro(6)">6</button>
+        <button class="button" onclick="adicionar_parametro('*')">*</button>
+
+        <button class="button" onclick="adicionar_parametro(1)">1</button>
+        <button class="button" onclick="adicionar_parametro(2)">2</button>
+        <button class="button" onclick="adicionar_parametro(3)">3</button>
+        <button class="button" onclick="adicionar_parametro('-')">-</button>
+
+        <button class="button" onclick="adicionar_parametro(0)">0</button>
+        <button class="button" onclick="adicionar_parametro('.')">.</button>
+        <button class="button" onclick="calcular()">=</button>
+        <button class="button" onclick="adicionar_parametro('+')">+</button>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="copy">
+      &copy; Copyright 2022 CalculadoraPWD Yan Guilherme de Souza Moreira - Todos os direitos reservados
+    </div>
+  </footer>
+  <!--Link JavaScript-->
+  <script src="./script.js"></script>
+</body>
+
+</html>
